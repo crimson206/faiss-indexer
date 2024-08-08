@@ -155,7 +155,13 @@ kwargs = Kwargs(
     description="Your package description.",
     # https://pypi.org/classifiers/
     topics=["Topic :: Software Development :: Libraries :: Python Modules"],
-    dependencies=["crimson-intelli-typ==0.4.0", "ollama"],
+    dependencies=[
+        "crimson-intelli-typ==0.4.0",
+        "ollama",
+        "numpy",
+        "faiss-cpu",
+        "pydantic",
+    ],
 )
 
 
