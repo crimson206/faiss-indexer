@@ -130,7 +130,7 @@ def empty_readme():
 
 
 def generate_requirements(dependencies_f: str):
-    dependencies_f = dependencies_f.replace('"', "").replace(',', "")
+    dependencies_f = dependencies_f.replace('"', "").replace(",", "")
     with open("requirements.txt", "w") as file:
         file.write(dependencies_f)
 
@@ -151,11 +151,11 @@ options = Options(
 kwargs = Kwargs(
     version="0.1.0",
     name_space="crimson",
-    module_name="package-name",
+    module_name="faiss-indexer",
     description="Your package description.",
     # https://pypi.org/classifiers/
     topics=["Topic :: Software Development :: Libraries :: Python Modules"],
-    dependencies=["crimson-intelli-typ==0.4.0"],
+    dependencies=["crimson-intelli-typ==0.4.0", "ollama"],
 )
 
 
